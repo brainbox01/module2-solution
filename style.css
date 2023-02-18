@@ -1,0 +1,41 @@
+/* Default styles for all screen sizes */
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+section {
+	float: left;
+	width: 33.33%;
+	padding: 20px;
+	box-sizing: border-box;
+}
+section h2 {
+	margin-top: 0;
+}
+@media (max-width: 767px) {
+	/* For mobile devices */
+	section {
+		float: none;
+		width: 100%;
+	}
+}
+/* Styles for screens 992px and above (desktop) */
+@media only screen and (min-width: 992px) {
+	/* Add desktop-specific styles here */
+}
+
+/* Styles for screens between 768px and 991px (tablet) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	/* Add tablet-specific styles here */
+}
+
+/* Styles for screens equal to or less than 767px (mobile) */
+@media only screen and (max-width: 767px) {
+	/* Add mobile-specific styles here */
+}
