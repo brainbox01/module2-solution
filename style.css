@@ -1,41 +1,80 @@
-/* Default styles for all screen sizes */
+/* default styles for all views */
 body {
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    font-family: sans-serif;
 }
-header {
-	background-color: #333;
-	color: white;
+
+h1 {
+    text-align: center;
+}
+
+.container {
+	max-width: 992px;
+	margin: 0 auto;
+	padding: 20px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.section {
+	background-color: #f2f2f2;
+	border: 1px solid black;
+	position: relative;
+	margin-bottom: 20px;
+	width: 30%;
+}
+
+h2 {
 	text-align: center;
-	padding: 20px;
-}
-section {
-	float: left;
-	width: 33.33%;
-	padding: 20px;
-	box-sizing: border-box;
-}
-section h2 {
 	margin-top: 0;
-}
-@media (max-width: 767px) {
-	/* For mobile devices */
-	section {
-		float: none;
-		width: 100%;
+	border: 1px solid black;
 	}
+
+#section1{
+	float: right;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: red;
+	}
+
+	#section2{
+		float: right;
+		position: relative;
+		padding-left: 20px;
+		padding-right: 20px;
+		background-color: red;
+		}
+
+		#section3{
+			float: right;
+			position: relative;
+			padding-left: 20px;
+			padding-right: 20px;
+			background-color: red;
+			}
+		
+p {
+	margin-top: 30px;
+	font-size: 12px;
+	padding: 10px;
 }
-/* Styles for screens 992px and above (desktop) */
-@media only screen and (min-width: 992px) {
-	/* Add desktop-specific styles here */
+/* tablet view */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .section {
+        flex-basis: 50%;
+		}
+    .section:nth-child(3) {
+        flex-basis: 100%;
+    }
 }
 
-/* Styles for screens between 768px and 991px (tablet) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	/* Add tablet-specific styles here */
-}
+/* mobile view */
+@media screen and (max-width: 767px) {
+    .section {
+        flex-basis: 100%;
+    }
 
-/* Styles for screens equal to or less than 767px (mobile) */
-@media only screen and (max-width: 767px) {
-	/* Add mobile-specific styles here */
 }
