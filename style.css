@@ -64,7 +64,7 @@ p {
 /* tablet view */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .section {
-        flex-basis: 50%;
+		flex-basis: 45%;
 		}
     .section:nth-child(3) {
         flex-basis: 100%;
